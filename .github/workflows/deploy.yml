@@ -1,0 +1,23 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - main  # Le workflow se déclenche lorsque des changements sont pushed sur la branche 'main'
+
+jobs:
+  ftp-deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Récupère le code du dépôt
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0  # Utilisation de l'action FTP
+        with:
+          server: ftp.cluster029.hosting.ovh.net  # Remplace par l'URL du serveur FTP
+          username: ${{ secrets.FTP_USERNAME }}  # Nom d'utilisateur FTP
+          password: ${{ secrets.FTP_PASSWORD }}  # Mot de passe FTP
+          local-dir: ./  # Le répertoire local à envoyer (par défaut, la racine du dépôt)
+          server-dir: /www/  # Répertoire distant où les fichiers seront déployés (doit se terminer par "/")

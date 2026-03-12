@@ -6,7 +6,7 @@ export const portfolioConfig = {
   location: "Université libre de Bruxelles et Université de Namur (Belgique)",
 
   // Contact Information
-  email: "taquiimam@example.com", // Replace with actual email if available
+  email: "juliette.parmentier@ulb.be", // Replace with actual email if available
 
   // Social Media Links
   socialLinks: {
@@ -19,7 +19,7 @@ export const portfolioConfig = {
   // SEO Information
   seo: {
     ogImage: "https://mdtaquiimam.vercel.app/og-image.png",
-    url: "https://mdtaquiimam.vercel.app",
+    url: "https://github.com/JuliettePmt",
     twitterHandle: "@md_taqui_imam",
     keywords: [
       "Juliette",
@@ -44,8 +44,8 @@ export const portfolioConfig = {
     ],
     authors: [
       {
-        name: "Taqui Imam",
-        url: "https://github.com/taqui-786",
+        name: "Juliette Parmentier",
+        url: "https://github.com/JuliettePmt",
       },
     ],
   },

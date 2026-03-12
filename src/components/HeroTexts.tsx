@@ -14,7 +14,7 @@ const HeroTexts = () => {
         {firstName} {middleName}  {lastName} .
       </h1>
       <TextRotator />
-      <h3 className="font-poppins text-2xl max-sm:text-xl">Je travaille sur la quantification des pratiques culturelles</h3>
+      <h3 className="font-poppins text-2sm max-sm:text-sm">Je travaille sur la quantification des pratiques culturelles sur les plateformes numériques.</h3>
 
     </>
   );

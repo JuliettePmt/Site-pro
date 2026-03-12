@@ -1,7 +1,8 @@
 export const portfolioConfig = {
   // Basic Information
   name: "Juliette Parmentier",
-  title: "Doctorante en Interaction humain-machine et Sciences de l'information et de la communication",
+  occupation: "Doctorante",
+  disciplines:["Sciences de l'information et de la communication", "Interaction humain-machine"],
   description: "",
   location: "Université libre de Bruxelles et Université de Namur (Belgique)",
 
@@ -53,17 +54,18 @@ export const portfolioConfig = {
   // About Information
   about: {
     bio: "Je suis doctorante en co-tutelle entre Sciences de l'information et de la communication et Informatique (interaction humain-machine), à l'Université libre de Bruxelles et à l'Université de Namur (en Belgique). Je suis sous la co-direction de Louis Wiart et Bruno Dumas.",
+
+  phd_description: "Je m'intéresse à la quantification des pratiques culturelles. Plus précisément, à l'influence des chiffres, graphiques, statistiques, compteurs, notes, etcs. sur le rapport des individus à la lecture et aux livres.",
     hobbies: [
-      "Je m'intéresse à la quantification des pratiques culturelles. Plus précisément, à l'influence des chiffres, graphiques, statistiques, compteurs, notes, etcs. sur le rapport des individus à la lecture et aux livres.",
       "Playing Games",
       "Watching Anime",
       "Tech Blog Writing",
       "Creating Cool Projects",
     ],
     personalInfo: {
-      language: "Français",
-      nationality: "Française",
-      gender: "Female",
+      languages: "Français",
+      disciplines: "SIC & HCI",
+      faculties: "ULB & Unamur",
     },
   },
 

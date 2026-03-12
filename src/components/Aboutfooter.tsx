@@ -4,18 +4,18 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const Aboutfooter = () => {
   const items = [
     {
-      name: "Language",
-      answer: portfolioConfig.about.personalInfo.language,
+      name: "Languages",
+      answer: portfolioConfig.about.personalInfo.languages,
       icon: <Languages className="h-11 w-11" />,
     },
     {
-      name: "Nationality",
-      answer: portfolioConfig.about.personalInfo.nationality,
+      name: "Disciplines",
+      answer: portfolioConfig.about.personalInfo.disciplines,
       icon: <Globe2 className="h-8 w-8" />,
     },
     {
-      name: "Gender",
-      answer: portfolioConfig.about.personalInfo.gender,
+      name: "Facultés",
+      answer: portfolioConfig.about.personalInfo.faculties,
       icon: <Dna className="h-8 w-8" />,
     },
   ];

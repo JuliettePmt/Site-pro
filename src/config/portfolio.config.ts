@@ -235,7 +235,7 @@ export const portfolioConfig = {
       description:
         "Description",
       tags: ["Open source"],
-      link: "https://journals.openedition.org/communication/21836",
+      link: "https://www.erudit.org/fr/revues/memoires/2025-v16-n2-memoires010471/1122235ar/",
     },
 
   ],

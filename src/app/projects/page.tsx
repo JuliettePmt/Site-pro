@@ -4,24 +4,26 @@ import Heading from "@/components/Heading";
 import ProjectCards from "@/components/ProjectsCard";
 import { Badge } from "@/components/ui/badge";
 import { Layers } from "lucide-react";
+import { portfolioConfig } from "@/config/portfolio.config";
 import { useLang } from "@/context/LangContext";
-import { translations } from "@/lib/translations_projects";
+import { translations_projects } from "@/lib/translations_projects";
 
 const projectsPage = () => {
-const { lang } = useLang();
-const t = translations[lang];
+  const { lang } = useLang();
+  const t = translations_projects[lang];
+
 return (
 // PROJECT PAGE
 <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
 <Badge variant="secondary" className="gap-1.5 py-1 ">
 <Layers className="h-4 w-4" />
-{t.badge}
+        {t.projects_badge}
 </Badge>
 <div className="flex flex-col gap-3">
-<Heading>{t.title}</Heading>
+<Heading>{t.projects_title}</Heading>
 <FramerWrapper y={0} x={200}>
 <p className=" font-poppins text-lg w-full text-tertiary max-sm:text-base">
-{t.subtitle}
+          {t.projects_subtitle}
 </p>
 </FramerWrapper>
 </div>

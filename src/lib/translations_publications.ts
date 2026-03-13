@@ -1,0 +1,56 @@
+export const translations_publications = {
+    fr: {
+      badge: "Publications",
+      title: "Publications scientifiques",
+      subtitle: "Articles parus dans des revues scientifiques.",
+      publications: [
+        {
+          title: "Cultures de la quantification et quantification de la culture",
+          subtitle: "Les effets de la mise en nombre des pratiques littéraires sur les utilisateurs de plateformes numériques",
+          author: "Juliette Parmentier",
+          journal: "Communication",
+          date: "2025",
+          description: "Description",
+          tags: ["Open source"],
+          link: "https://journals.openedition.org/communication/21836",
+        },
+        {
+          title: "Trouver la perle rare? Enjeux de visibilisation des livres sur les plateformes culturelles numériques",
+          subtitle: "Étude quantitative de SensCritique",
+          author: "Juliette Parmentier",
+          journal: "Mémoires du livre / Studies in Book Culture",
+          date: "2025",
+          description: "Description",
+          tags: ["Open source"],
+          link: "https://www.erudit.org/fr/revues/memoires/2025-v16-n2-memoires010471/1122235ar/",
+        },
+      ],
+    },
+    en: {
+      badge: "Publications",
+      title: "Scientific publications",
+      subtitle: "Articles published in peer-reviewed journals.",
+      publications: [
+        {
+          title: "Cultures of quantification and quantification of culture",
+          subtitle: "The effects of numbering literary practices on users of digital platforms",
+          author: "Juliette Parmentier",
+          journal: "Communication",
+          date: "2025",
+          description: "Description",
+          tags: ["Open source"],
+          link: "https://journals.openedition.org/communication/21836",
+        },
+        {
+          title: "Finding the rare gem? Visibility challenges for books on digital cultural platforms",
+          subtitle: "Quantitative study of SensCritique",
+          author: "Juliette Parmentier",
+          journal: "Mémoires du livre / Studies in Book Culture",
+          date: "2025",
+          description: "Description",
+          tags: ["Open source"],
+          link: "https://www.erudit.org/fr/revues/memoires/2025-v16-n2-memoires010471/1122235ar/",
+        },
+      ],
+    },
+  }

@@ -172,18 +172,6 @@ export const portfolioConfig = {
     ],
   },
 
-  // Education Information
-  education: [
-    {
-      degree: "Bachelor of Computer Application",
-      institution: "Ranchi University Jharkhand",
-      location: "Doranda College Ranchi",
-      period: "July 2023 - 2026",
-      description:
-        "I am currently Studying Bachelor of Computer Application form Doranda College Ranchi a Goverment College of Ranchi. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of computer science.",
-    },
-  ],
-
   // Projects Information
   projects: [
     {
@@ -232,8 +220,7 @@ export const portfolioConfig = {
       author:"Juliette Parmentier",
       journal:"Mémoires du livre / Studies in Book Culture",
       date:"2025",
-      description:
-        "Description",
+      description:"Description",
       tags: ["Open source"],
       link: "https://www.erudit.org/fr/revues/memoires/2025-v16-n2-memoires010471/1122235ar/",
     },

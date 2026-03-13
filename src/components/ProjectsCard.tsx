@@ -41,10 +41,13 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
           <div className="flex flex-wrap gap-2">
             {value.tags.map((tag: string, index: number) => {
               const tagStyles = {
+                'Development': 'bg-red-100 text-red-800',
                 'Développement': 'bg-red-100 text-red-800',
+                'Research project': 'bg-yellow-100 text-yellow-800',
                 'Projet de recherche': 'bg-yellow-100 text-yellow-800',
                 'Open source': 'bg-blue-100 text-blue-800',
                 'Shadcn Ui': 'bg-blue-100 text-blue-800',
+                'Autre': 'bg-blue-100 text-blue-800',
               }[tag] || 'bg-gray-100 text-gray-800';
 
               return (

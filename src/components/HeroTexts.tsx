@@ -11,7 +11,7 @@ const HeroTexts = () => {
   return (
     <>
       <h1 className="font-rubik text-5xl name_underline text-primary max-sm:text-6xl ">
-        {firstName} {middleName}  {lastName} .
+        {firstName} {middleName}  {lastName}
       </h1>
       <TextRotator />
       <h3 className="font-poppins text-2sm max-sm:text-sm">Je travaille sur la quantification des pratiques culturelles sur les plateformes numériques.</h3>

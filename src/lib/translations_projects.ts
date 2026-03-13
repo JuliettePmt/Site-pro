@@ -12,7 +12,7 @@ export const translations_projects = {
         },
         {
           title: "SwipeBooks",
-          description: "Swipez des livres et obtenez votre profil de lecteur ! \n\nSwipeBooks est une application web développée dans le cadre d'un projet de recherche expérimental. Elle est utilisée pour conduire des tests utilisateurs, et comprendre le rapport que les lecteurs entretiennent aux systèmes de recommandation algorithmiques.",
+          description: "Swipez des livres et obtenez votre profil de lecteur ! \n\nSwipeBooks est une application web développée dans le cadre d'un projet de recherche expérimental. Elle est utilisée pour conduire des tests utilisateurs, et comprendre le rapport que les lecteurs entretiennent aux systèmes de recommandation algorithmiques.",
           tags: ["Développement", "Recherche expérimentale", "Recommandation de livres", "Algorithmes", "React", "JSX", "Python"],
           link: "https://test.info.unamur.be/",
           githublink: "https://github.com/UNamurCSFaculty/TinderBook",

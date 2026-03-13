@@ -1,3 +1,5 @@
+'use client'
+import { useLang } from '@/context/LangContext'
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
@@ -24,10 +26,12 @@ interface PublicationCardProps {
     githublink?: string;
   };
   num: number;
+  lang: 'fr' | 'en';
 }
 
 const PublicationCards: React.FC<PublicationCardProps> = ({ value, num }) => {
-  return (
+  const { lang } = useLang()
+    return (
     <FramerWrapper 
       className="max-w-[32%] max-lg:max-w-full" 
       y={0} 
@@ -81,24 +85,10 @@ const PublicationCards: React.FC<PublicationCardProps> = ({ value, num }) => {
               "w-fit transition-all hover:translate-y-[-2px] hover:shadow-md group"
             )}
           >
-            Lire l'article
+            {lang === 'fr' ? "Lire l'article" : 'Read the article'}
             <ArrowUpRight className="h-4 w-4 ml-1 hidden group-hover:block -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
           </Link>
 
-          {value.githublink && value.githublink !== "" && (
-            <Link
-              href={value.githublink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                buttonVariants({ variant: "outline", size: "sm" }),
-                "w-fit transition-all hover:translate-y-[-2px] hover:shadow-md group ml-3"
-              )}
-            >
-              Voir le code sur Github
-              <ArrowUpRight className="h-4 w-4 ml-1 hidden group-hover:block -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
-            </Link>
-          )}
         </CardFooter>
       </Card>
     </FramerWrapper>

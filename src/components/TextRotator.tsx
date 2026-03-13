@@ -12,7 +12,7 @@ return (
 <div className="font-poppins text-base sm:text-2xl [text-wrap:balance] text-gray-700">
 <div className="font-poppins text-base sm:text-2xl [text-wrap:balance] text-gray-700">
 {t.occupation}{" "}
-<span className="text-sm"> en</span>{" "}
+<span className="text-sm"> {t.connector}</span>{" "}
 <span className="text-primary">{t.disciplines[0]}</span>
 <span className="text-sm"> &</span>{" "} 
 <span className="text-primary">{t.disciplines[1]}</span>

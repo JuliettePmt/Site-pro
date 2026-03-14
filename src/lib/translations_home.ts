@@ -1,8 +1,8 @@
 export const translations_home = {
     fr: {
-      tagline: "Je travaille sur la quantification des pratiques culturelles sur les plateformes numériques.",
+      tagline: "Je travaille sur l'influence des plateformes numériques sur les pratiques culturelles.",
     },
     en: {
-      tagline: "I work on the quantification of cultural practices on digital platforms.",
+      tagline: "I work on the influence of digital platforms on cultural practices.",
     },
   }

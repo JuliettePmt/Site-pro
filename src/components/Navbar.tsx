@@ -21,26 +21,31 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import FramerWrapper from "./animation/FramerWrapper";
 import { usePathname } from "next/navigation";
+import { useLang } from "@/context/LangContext";
+import { translations_about } from "@/lib/translations_about";
+
 
 const Navbar = () => {
+  const { lang } = useLang();
+  const t = translations_about[lang];
 
   const data = [
     {
-      title: 'Accueil',
+      title: t.nav_bar[0],
       icon: (
         <HomeIcon className='h-full w-full ' />
       ),
       href: '/',
     },
     {
-      title: 'Qui suis-je ?',
+      title: t.nav_bar[1],
       icon: (
         <User className='h-full w-full ' />
       ),
       href: '/about',
     },
     {
-      title: 'Publications',
+      title: t.nav_bar[2],
       icon: (
         <BookMarked className='h-full w-full ' />
       ),
@@ -61,7 +66,7 @@ const Navbar = () => {
     //   href: '/education',
     // },
     {
-      title: 'Projets',
+      title: t.nav_bar[3],
       icon: (
         <FolderGit2 className='h-full w-full ' />
       ),

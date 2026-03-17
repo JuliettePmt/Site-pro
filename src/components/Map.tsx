@@ -22,7 +22,7 @@ const cities = [
 
 const conference_cities = [
   {
-    name: { en: "Rome", fr: "Roma" },
+    name: { en: "Roma", fr: "Rome" },
     coordinates: [12.4964, 41.9028] as [number, number],
     labelY: -12,
     labelX: 0,

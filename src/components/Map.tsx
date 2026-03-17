@@ -31,7 +31,7 @@ const conference_cities = [
   {
     name: { en: "Paris", fr: "Paris" },
     coordinates: [2.3522, 48.8566] as [number, number],
-    labelY: 12,
+    labelY: 15,
     labelX: 0,
     anchor: "middle" as const
   },
@@ -79,7 +79,7 @@ export default function MapChart() {
     <ComposableMap
       projection="geoConicConformal"
       projectionConfig={{
-        center: [-30, 50],
+        center: [-25, 55],
         scale: 750,
       }}
       width={1000}

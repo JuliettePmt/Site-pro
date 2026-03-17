@@ -31,7 +31,7 @@ const conference_cities = [
   {
     name: { en: "Paris", fr: "Paris" },
     coordinates: [2.3522, 48.8566] as [number, number],
-    labelY: 15,
+    labelY: 16,
     labelX: 0,
     anchor: "middle" as const
   },

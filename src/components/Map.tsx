@@ -31,7 +31,7 @@ const conference_cities = [
   {
     name: { en: "Paris", fr: "Paris" },
     coordinates: [2.3522, 48.8566] as [number, number],
-    labelY: -12,
+    labelY: 12,
     labelX: 0,
     anchor: "middle" as const
   },
@@ -83,7 +83,7 @@ export default function MapChart() {
         scale: 750,
       }}
       width={1000}
-      height={700}
+      height={600}
       style={{ width: "100%", height: "auto" }}
     >
       <Geographies geography={geoUrl}>

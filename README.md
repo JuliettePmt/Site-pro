@@ -15,5 +15,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Update descriptions of articles
 - Add pages
+- Modif position de Paris sur la carte + réorienter légèrement la carte vers l'Est
 - CV ?
 - Contact ?

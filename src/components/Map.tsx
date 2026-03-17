@@ -7,6 +7,15 @@ const cities = [
   { name: "Namur", coordinates: [4.8717, 50.4669] as [number, number], labelY: 4, labelX: 12, anchor: "start" as const },
 ]
 
+const conference_cities = [
+  { name: "Roma",     coordinates: [12.4964, 41.9028] as [number, number], labelY: -12, labelX: 0,  anchor: "middle" as const },
+  { name: "Paris",    coordinates: [2.3522,  48.8566] as [number, number], labelY: -12, labelX: 0,  anchor: "middle" as const },
+  { name: "Toulouse", coordinates: [1.4442,  43.6047] as [number, number], labelY: 4,   labelX: 12, anchor: "start"  as const },
+  { name: "Montréal", coordinates: [-73.5674, 45.5019] as [number, number], labelY: -12, labelX: 0, anchor: "middle" as const },
+  { name: "Tirana",   coordinates: [19.8187, 41.3275] as [number, number], labelY: -12, labelX: 0,  anchor: "middle" as const },
+  { name: "Lille",    coordinates: [3.0573,  50.6292] as [number, number], labelY: 3,   labelX: -33, anchor: "right"  as const },
+]
+
 export default function MapChart() {
   return (
     <ComposableMap
@@ -34,20 +43,33 @@ export default function MapChart() {
           ))
         }
       </Geographies>
-
       {cities.map(({ name, coordinates, labelY, labelX, anchor }) => (
-        <Marker key={name} coordinates={coordinates}>
-          <circle r={6} fill="#cb564d" stroke="#fff" strokeWidth={2} />
-          <text
-            textAnchor={anchor}
-            x={labelX}
-            y={labelY}
-            style={{ fontFamily: "Poppins, sans-serif", fontSize: 12, fill: "#1E293B", fontWeight: 600 }}
-          >
-            {name}
-          </text>
-        </Marker>
-      ))}
+  <Marker key={name} coordinates={coordinates}>
+    <circle r={6} fill="#cb564d" stroke="#fff" strokeWidth={2} />
+    <text
+      textAnchor={anchor}
+      x={labelX}
+      y={labelY}
+      style={{ fontFamily: "Poppins, sans-serif", fontSize: 12, fill: "#1E293B", fontWeight: 600 }}
+    >
+      {name}
+    </text>
+  </Marker>
+))}
+
+{conference_cities.map(({ name, coordinates, labelY, labelX, anchor }) => (
+  <Marker key={name} coordinates={coordinates}>
+    <circle r={6} fill="#3B82F6" stroke="#fff" strokeWidth={2} />
+    <text
+      textAnchor={anchor}
+      x={labelX}
+      y={labelY}
+      style={{ fontFamily: "Poppins, sans-serif", fontSize: 12, fill: "#1E293B", fontWeight: 600 }}
+    >
+      {name}
+    </text>
+  </Marker>
+))}
     </ComposableMap>
   )
 }

@@ -26,71 +26,76 @@ const conference_cities = [
     coordinates: [12.4964, 41.9028] as [number, number],
     labelY: -12,
     labelX: 0,
-    anchor: "middle" as const
+    anchor: "middle" as const,
+    color: "#3B82F6"
   },
   {
     name: { en: "Paris", fr: "Paris" },
     coordinates: [2.3522, 48.8566] as [number, number],
     labelY: 16,
     labelX: 0,
-    anchor: "middle" as const
+    anchor: "middle" as const,
+    color: "#3B82F6"
   },
   {
     name: { en: "Toulouse", fr: "Toulouse" },
     coordinates: [1.4442, 43.6047] as [number, number],
     labelY: 4,
     labelX: 12,
-    anchor: "start" as const
+    anchor: "start" as const,
+    color: "#3B82F6"
   },
   {
     name: { en: "Montreal", fr: "Montréal" },
     coordinates: [-73.5674, 45.5019] as [number, number],
     labelY: -12,
     labelX: 0,
-    anchor: "middle" as const
+    anchor: "middle" as const,
+    color: "#3B82F6"
   },
   {
     name: { en: "Tirana", fr: "Tirana" },
     coordinates: [19.8187, 41.3275] as [number, number],
     labelY: -12,
     labelX: 0,
-    anchor: "middle" as const
+    anchor: "middle" as const,
+    color: "#3B82F6"
   },
   {
     name: { en: "Lille", fr: "Lille" },
     coordinates: [3.0573, 50.6292] as [number, number],
     labelY: 3,
     labelX: -33,
-    anchor: "right" as const
+    anchor: "right" as const,
+    color: "#3B82F6"
   },
-]
-
-const summer_school_cities = [
   {
     name: { en: "Vienna", fr: "Vienne" },
     coordinates: [16.3738, 48.2082] as [number, number],
     labelY: -12,
     labelX: 0,
-    anchor: "middle" as const
-  }
+    anchor: "middle" as const,
+    color: "#1C5C3A"
+  },
 ]
 
 const legend = {
   en: [
     { color: "#3B82F6", label: "Conferences" },
-    { color: "#008000", label: "Summer schools" }
+    { color: "#008000", label: "Summer schools" },
   ],
   fr: [
     { color: "#3B82F6", label: "Conférences" },
-    { color: "#008000", label: "Écoles d'été" }
+    { color: "#008000", label: "Écoles d'été" },
   ],
 }
 
 export default function MapChart() {
   const { lang } = useLang()
+  const legendItems = lang === 'fr' ? legend.fr : legend.en
 
   return (
-    <div style={{ width: "100%", height: "auto" }}>
+    <div style={{ position: "relative", width: "100%" }}>
       <ComposableMap
         projection="geoConicConformal"
         projectionConfig={{
@@ -108,24 +113,15 @@ export default function MapChart() {
                 key={geo.rsmKey}
                 geography={geo}
                 style={{
-                  default: {
-                    fill: "#E5E7EB",
-                    stroke: "#fff",
-                    strokeWidth: 0.5,
-                  },
-                  hover: {
-                    fill: "#cb564d",
-                    stroke: "#fff",
-                    strokeWidth: 0.5,
-                  },
-                  pressed: {
-                    fill: "#81181e",
-                  },
+                  default: { fill: "#E5E7EB", stroke: "#fff", strokeWidth: 0.5 },
+                  hover: { fill: "#cb564d", stroke: "#fff", strokeWidth: 0.5 },
+                  pressed: { fill: "#81181e" },
                 }}
               />
             ))
           }
         </Geographies>
+
         {cities.map(({ name, coordinates, labelY, labelX, anchor }) => (
           <Marker key={name.en} coordinates={coordinates}>
             <circle r={6} fill="#cb564d" stroke="#fff" strokeWidth={2} />
@@ -144,27 +140,10 @@ export default function MapChart() {
             </text>
           </Marker>
         ))}
-        {conference_cities.map(({ name, coordinates, labelY, labelX, anchor }) => (
+
+        {conference_cities.map(({ name, coordinates, labelY, labelX, anchor, color }) => (
           <Marker key={name.en} coordinates={coordinates}>
-            <circle r={6} fill="#3B82F6" stroke="#fff" strokeWidth={2} />
-            <text
-              textAnchor={anchor}
-              x={labelX}
-              y={labelY}
-              style={{
-                fontFamily: "Poppins, sans-serif",
-                fontSize: 12,
-                fill: "#1E293B",
-                fontWeight: 600,
-              }}
-            >
-              {lang === 'fr' ? name.fr : name.en}
-            </text>
-          </Marker>
-        ))}
-        {summer_school_cities.map(({ name, coordinates, labelY, labelX, anchor }) => (
-          <Marker key={name.en} coordinates={coordinates}>
-            <circle r={6} fill="#008000" stroke="#fff" strokeWidth={2} />
+            <circle r={6} fill={color} stroke="#fff" strokeWidth={2} />
             <text
               textAnchor={anchor}
               x={labelX}
@@ -182,39 +161,34 @@ export default function MapChart() {
         ))}
       </ComposableMap>
 
-      {/* Légende - intégrée à la carte */}
-      <svg
-        width="1000"
-        height="50"
-        style={{ marginTop: "-50px", position: "relative", zIndex: 10 }}
+      {/* Legend */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: "12%",
+          left: "2%",
+          backgroundColor: "rgba(255, 255, 255, 0.9)",
+          border: "1px solid #E5E7EB",
+          borderRadius: "8px",
+          padding: "10px 14px",
+          fontFamily: "Poppins, sans-serif",
+          fontSize: 13,
+          color: "#1E293B",
+          boxShadow: "0 1px 4px rgba(0,0,0,0.1)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "6px",
+        }}
       >
-        <g style={{ marginLeft: "16px" }}>
-          {legend[lang].map((item, index) => (
-            <g key={item.label}>
-              <circle
-                cx={32 + index * 200}
-                cy={25}
-                r="6"
-                fill={item.color}
-                stroke="#fff"
-                strokeWidth="2"
-              />
-              <text
-                x={52 + index * 200}
-                y={30}
-                style={{
-                  fontFamily: "Poppins, sans-serif",
-                  fontSize: 14,
-                  fill: "#1E293B",
-                  fontWeight: 600,
-                }}
-              >
-                {item.label}
-              </text>
-            </g>
-          ))}
-        </g>
-      </svg>
+        {legendItems.map(({ color, label }) => (
+          <div key={label} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <svg width={14} height={14}>
+              <circle cx={7} cy={7} r={6} fill={color} stroke="#fff" strokeWidth={2} />
+            </svg>
+            <span>{label}</span>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

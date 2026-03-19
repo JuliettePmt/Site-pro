@@ -80,7 +80,7 @@ const conference_cities = [
     labelY: 18,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#008000"
+    color: "#2DE3E3"
   },
 ]
 
@@ -88,12 +88,12 @@ const legend = {
   en: [
     { color: "#cb564d", label: "Home universities" },
     { color: "#3B82F6", label: "Conferences" },
-    { color: "#008000", label: "Summer schools" },
+    { color: "#2DE3E3", label: "Summer schools" },
   ],
   fr: [
     { color: "#cb564d", label: "Universités de rattachement" },
     { color: "#3B82F6", label: "Conférences" },
-    { color: "#008000", label: "Écoles d'été" },
+    { color: "#2DE3E3", label: "Écoles d'été" },
   ],
   
 }

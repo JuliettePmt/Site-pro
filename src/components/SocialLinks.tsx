@@ -35,14 +35,14 @@ const SocialLinks = () => {
     //   icon: <ExternalLink />,
     // },
     {
-      name: "Github",
-      link: portfolioConfig.socialLinks.github,
-      icon: <Github />,
-    },
-    {
       name: "Orcid",
       link: portfolioConfig.socialLinks.orcid,
       icon: <img src={orcidLogo.src} alt="Orcid" width={(34)} height={33} />,
+    },
+    {
+      name: "Github",
+      link: portfolioConfig.socialLinks.github,
+      icon: <Github />,
     },
     
   ];

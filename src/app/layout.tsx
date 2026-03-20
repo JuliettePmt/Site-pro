@@ -46,9 +46,9 @@ return (
 <LangProvider>
 <main
 className={cn(
-"flex  relative  break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 max-md:p-4 bg-transparent max-sm:pt-20 bg-[radial-gradient(#2f7df4_1px,transparent_1px)]",
-              { "bg-white": "#E6E7EB" }
-            )}
+  "flex relative break-words h-dvh min-h-screen items-center justify-between pt-14 pb-4 px-40 bg-transparent max-md:px-4 max-md:pb-4 max-sm:pt-32 bg-[radial-gradient(#2f7df4_1px,transparent_1px)]",
+  { "bg-white": "#E6E7EB" }
+)}
 >
 <Navbar />
 <LangToggle />

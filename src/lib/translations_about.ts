@@ -10,7 +10,7 @@ export const translations_about = {
     faculties: ["Université libre de Bruxelles", "Université de Namur"],
     profs: ["Louis Wiart", "Bruno Dumas"],
     intro_phd:"Ma thèse",
-    phd_subject:["Ma thèse vise à analyser la façon dont, sur Internet les", "activités littéraires", "sont", "traduites en statistiques, notes, graphiques ou métriques quantifiées", "et à saisir les", "effets de cette « mise en nombre »", "sur le rapport que les lecteurs entretiennent aux livres et aux pratiques de lecture."]
+    phd_subject:["Ma thèse vise à analyser la façon dont, sur Internet les", "activités littéraires", "sont", "traduites en statistiques, notes, graphiques ou métriques quantifiées", "et à saisir les", "effets de cette « mise en nombre »", "sur le rapport que les lecteurs entretiennent aux livres et aux pratiques de lecture."],
   },
   en: {
     badge: "About",

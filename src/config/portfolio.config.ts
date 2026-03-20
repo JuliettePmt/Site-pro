@@ -71,6 +71,7 @@ export const portfolioConfig = {
     },
   },
 
+
   // Skills and Roles
   skills: {
     roles: [

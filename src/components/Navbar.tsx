@@ -8,11 +8,13 @@ import {
   GraduationCap,
   HomeIcon,
   LightbulbIcon,
+  Landmark,
   BookMarked,   
   Mail,
   MoreHorizontal,
  
   User,
+  LandmarkIcon,
 } from 'lucide-react';
 
 import { Dock, DockIcon, DockItem, DockLabel } from '@/components/animation/DockAnimation';
@@ -52,13 +54,6 @@ const Navbar = () => {
       href: '/publications',
     },
     // {
-    //   title: 'Compétences',
-    //   icon: (
-    //     <LightbulbIcon className='h-full w-full ' />
-    //   ),
-    //   href: '/skills',
-    // },
-    // {
     //   title: 'Parcours',
     //   icon: (
     //     <GraduationCap className='h-full w-full ' />
@@ -71,6 +66,13 @@ const Navbar = () => {
         <FolderGit2 className='h-full w-full ' />
       ),
       href: '/projects',
+    },
+    {
+      title: 'Affiliations',
+      icon: (
+        <LandmarkIcon className='h-full w-full ' />
+      ),
+      href: '/affiliations',
     },
    
     // {

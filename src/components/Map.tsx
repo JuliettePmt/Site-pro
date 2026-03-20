@@ -201,7 +201,7 @@ style={{
           borderRadius: "8px",
           padding: "10px 14px",
           fontFamily: "Poppins, sans-serif",
-          fontSize: 13,
+          fontSize: "clamp(9px, 1.5vw, 13px)",
           color: "#1E293B",
           boxShadow: "0 1px 4px rgba(0,0,0,0.1)",
           display: "flex",

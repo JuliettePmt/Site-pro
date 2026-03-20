@@ -41,7 +41,7 @@ const affiliationsPage = () => {
               <p className="font-poppins text-xs w-full text-muted-foreground max-sm:text-xs mt-2">
                 {affiliation.period}
               </p>
-              <p className="font-poppins text-xs w-full text-muted-foreground max-sm:text-xs -mt-3">
+              <p className="font-poppins text-xs w-full text-muted-foreground max-sm:text-xs -mt-">
               {affiliation.url && (
                 <a href={affiliation.url} target="_blank" rel="noopener noreferrer" className="font-poppins text-xs text-muted-foreground mt-2 inline-flex items-center gap-1 hover:text-[hsl(var(--primary-sky))] transition-colors">
                     {affiliation.url_title}

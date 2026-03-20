@@ -107,10 +107,6 @@ function Dock({
           isHovered.set(0);
           mouseX.set(Infinity);
         }}
-        onTouchEnd={() => {
-          isHovered.set(0);
-          mouseX.set(Infinity);
-        }}
         className={cn(
           'mx-auto flex w-fit gap-1.5 sm:gap-4 rounded-2xl bg-gray-50 px-4 dark:bg-neutral-900',
           className
@@ -148,25 +144,21 @@ function DockItem({ children, className }: DockItemProps) {
   const width = useSpring(widthTransform, spring);
 
   return (
-<motion.div
-  ref={ref}
-  style={{ width }}
-  onHoverStart={() => isHovered.set(1)}
-  onHoverEnd={() => isHovered.set(0)}
-  onFocus={() => isHovered.set(1)}
-  onBlur={() => isHovered.set(0)}
-  onTouchStart={() => isHovered.set(1)}
-  onTouchEnd={() => {
-    setTimeout(() => isHovered.set(0), 300);
-  }}
-  className={cn(
-    'relative inline-flex items-center justify-center',
-    className
-  )}
-  tabIndex={0}
-  role='button'
-  aria-haspopup='true'
->
+    <motion.div
+      ref={ref}
+      style={{ width }}
+      onHoverStart={() => isHovered.set(1)}
+      onHoverEnd={() => isHovered.set(0)}
+      onFocus={() => isHovered.set(1)}
+      onBlur={() => isHovered.set(0)}
+      className={cn(
+        'relative inline-flex items-center justify-center',
+        className
+      )}
+      tabIndex={0}
+      role='button'
+      aria-haspopup='true'
+    >
       {Children.map(children, (child) =>
         cloneElement(child as React.ReactElement, { width, isHovered })
       )}

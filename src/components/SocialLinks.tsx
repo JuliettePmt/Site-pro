@@ -2,8 +2,9 @@ import { cn } from "@/lib/utils";
 import {
   Linkedin,
   // ExternalLink,
-  Github,
 } from "lucide-react";
+import githubLogo from "./logos/github_logo.svg"
+
 import orcidLogo from "./logos/orcid_logo.png"
 import researchgateLogo from "./logos/researchgate_logo.png"
 import halLogoSrc from "./logos/hal_logo.svg"
@@ -42,7 +43,7 @@ const SocialLinks = () => {
     {
       name: "Github",
       link: portfolioConfig.socialLinks.github,
-      icon: <Github />,
+      icon: <img src={githubLogo.src} alt="Hal" width={(33)} height={32} />,
     },
     
   ];

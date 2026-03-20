@@ -15,7 +15,8 @@ export const portfolioConfig = {
     // external: "https://tinyurl.com/MdTaquiImam",
     github: "https://github.com/JuliettePmt",
     hal:"https://cv.hal.science/juliette-parmentier",
-    researchgate:"https://www.researchgate.net/profile/Juliette-Parmentier?ev=hdr_xprf"
+    researchgate:"https://www.researchgate.net/profile/Juliette-Parmentier?ev=hdr_xprf",
+    orcid:"https://orcid.org/0009-0006-4092-8104",
   },
 
   // SEO Information

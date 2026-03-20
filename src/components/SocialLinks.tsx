@@ -4,6 +4,7 @@ import {
   // ExternalLink,
   Github,
 } from "lucide-react";
+import orcidLogo from "./logos/orcid_logo.png"
 import researchgateLogo from "./logos/researchgate_logo.png"
 import halLogoSrc from "./logos/hal_logo.svg"
 import { buttonVariants } from "./ui/button";
@@ -37,6 +38,11 @@ const SocialLinks = () => {
       name: "Github",
       link: portfolioConfig.socialLinks.github,
       icon: <Github />,
+    },
+    {
+      name: "Orcid",
+      link: portfolioConfig.socialLinks.orcid,
+      icon: <img src={orcidLogo.src} alt="Orcid" width={(34)} height={33} />,
     },
     
   ];

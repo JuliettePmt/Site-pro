@@ -53,7 +53,7 @@ const conference_cities = [
     labelX: 0,
     anchor: "middle" as const,
     color: "#FF6D28",
-    url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/402391/Details"
+    url: ""
   },
   {
     name: { en: "Tirana", fr: "Tirana" },

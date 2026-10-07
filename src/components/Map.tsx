@@ -52,7 +52,7 @@ const conference_cities = [
     labelY: -12,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#3B82F6",
+    color: "#8A4F7D",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/402391/Details"
   },
   {
@@ -84,17 +84,23 @@ const conference_cities = [
     url: ""
   },
   
+<<<<<<< HEAD
+=======
+
+>>>>>>> e52388e (Couleurs + map)
   { name: { en: "Brno", fr: "Brno" }, coordinates: [16.6068, 49.1951] as [number, number], labelY: -10, labelX: 0, anchor: "middle" as const, color: "#3B82F6", url: "" },
 
 ]
 const legend = {
   en: [
     { color: "#cb564d", label: "Home universities" },
+    { color: "#8A4F7D", label: "Research stays" },
     { color: "#3B82F6", label: "Conferences" },
     { color: "#2DE3E3", label: "Summer schools" },
   ],
   fr: [
     { color: "#cb564d", label: "Universités de rattachement" },
+    { color: "#8A4F7D", label: "Séjours de recherche" },
     { color: "#3B82F6", label: "Conférences" },
     { color: "#2DE3E3", label: "Écoles d'été" },
   ],

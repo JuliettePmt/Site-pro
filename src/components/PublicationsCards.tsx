@@ -57,7 +57,7 @@ const PublicationCards: React.FC<PublicationCardProps> = ({ value, num }) => {
                 'Open source': 'bg-green-100 text-green-800',
                 'Libre accès': 'bg-green-100 text-green-800',
                 'Open science': 'bg-green-100 text-blue-800',
-                'Publication scientifique': 'bg-[#dbeafe] text-[#1e40af]',
+                'Article scientifique': 'bg-[#dbeafe] text-[#1e40af]',
                 'Scientific publication': 'bg-blue-100 text-blue-800',
                 'Vulgarisation': 'bg-orange-100 text-orange-800',
                 'Press article': 'bg-orange-100 text-orange-800',

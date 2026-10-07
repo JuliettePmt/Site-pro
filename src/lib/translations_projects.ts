@@ -51,6 +51,12 @@ export const translations_projects = {
           link: "https://chromewebstore.google.com/detail/babelio-anti-quanti/naflkjcclkkaallpfpkokchcgjclifag?hl=fr&pli=1",
           githublink: "https://github.com/JuliettePmt/Babelio-AntiQuanti",
         },
+        {
+          title: "Campus",
+          description: "",
+          tags: ["Development", "Zotero"],
+          githublink: "https://github.com/JuliettePmt/Campus-Zotero-style",
+        },
       ],
     },
   

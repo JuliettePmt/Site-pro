@@ -203,12 +203,10 @@ export const portfolioConfig = {
 
     },
     {
-      title: "Campus, un style de citation Zotero en français",
-      description:
-        "Style de citation universitaire Zotero, disponible en deux formats : citation dans le texte, ou citation en note de bas de page",
+      title: "Campus",
+      description:"Style de citation universitaire Zotero en français, disponible en deux formats : citation dans le texte, ou citation en note de bas de page",
       tags: ["Développement", "Zotero"],
       githublink: "https://github.com/JuliettePmt/Campus-Zotero-style",
-
     },
   ],
 

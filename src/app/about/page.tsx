@@ -36,7 +36,7 @@ const page = () => {
                 <span className="text-[hsl(var(--primary-sky))]">{t.studies[1]}</span> 
                 {t.studies[2]}
                 <span className="text-[hsl(var(--primary-sky))]">{t.studies[3]}</span>
-                {t.studies[4]}
+                {t.studies[4]}.
         </p>
 
         <Heading><p className="w-full mt-10">{t.intro_phd}</p></Heading>

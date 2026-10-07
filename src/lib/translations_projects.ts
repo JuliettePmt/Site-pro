@@ -24,6 +24,12 @@ export const translations_projects = {
           link: "https://chromewebstore.google.com/detail/babelio-anti-quanti/naflkjcclkkaallpfpkokchcgjclifag?hl=fr&pli=1",
           githublink: "https://github.com/JuliettePmt/Babelio-AntiQuanti",
         },
+        {
+          title: "Campus, un style de citation Zotero en français",
+          description: "Style de citation universitaire Zotero, disponible en deux formats : citation dans le texte, ou citation en note de bas de page.",
+          tags: ["Développement", "Zotero", "CSL"],
+          githublink: "https://github.com/JuliettePmt/Campus-Zotero-style",
+        },
       ],
     },
     en: {
@@ -50,6 +56,12 @@ export const translations_projects = {
           tags: ["Development", "Experimental research", "Literary platforms", "Quantification", "Javascript", "Plugin"],
           link: "https://chromewebstore.google.com/detail/babelio-anti-quanti/naflkjcclkkaallpfpkokchcgjclifag?hl=fr&pli=1",
           githublink: "https://github.com/JuliettePmt/Babelio-AntiQuanti",
+        },
+        {
+          title: "Campus, a Zotero citation style in French",
+          description: "Zotero academic citation style, available in two formats: in-text, or footnote.",
+          tags: ["Development", "Zotero", "CSL"],
+          githublink: "https://github.com/JuliettePmt/Campus-Zotero-style",
         },
       ],
     },

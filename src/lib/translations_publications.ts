@@ -2,7 +2,7 @@ export const translations_publications = {
     fr: {
       badge: "Publications",
       title: "Publications scientifiques",
-      subtitle: "Articles parus dans des revues scientifiques.",
+      subtitle: "Articles parus dans des revues scientifiques et dans la presse.",
       publications: [
         {
           title: "Cultures de la quantification et quantification de la culture",
@@ -15,7 +15,7 @@ export const translations_publications = {
           link: "https://journals.openedition.org/communication/21836",
         },
         {
-          title: "Trouver la perle rare? Enjeux de visibilisation des livres sur les plateformes culturelles numériques",
+          title: "Trouver la perle rare ? Enjeux de visibilisation des livres sur les plateformes culturelles numériques",
           subtitle: "Étude quantitative de SensCritique",
           author: "Juliette Parmentier",
           journal: "Mémoires du livre / Studies in Book Culture",
@@ -39,7 +39,7 @@ export const translations_publications = {
     en: {
       badge: "Publications",
       title: "Scientific publications",
-      subtitle: "Articles published in peer-reviewed journals.",
+      subtitle: "Articles published in peer-reviewed journals and press.",
       publications: [
         {
           title: "Cultures of quantification and quantification of culture",
@@ -48,7 +48,7 @@ export const translations_publications = {
           journal: "Communication",
           date: "2025",
           description: "",
-          tags: ["Scientific publication", "Open science"],
+          tags: ["Peer-reviewed scientific publication", "Open science"],
           link: "https://journals.openedition.org/communication/21836",
         },
         {
@@ -58,7 +58,7 @@ export const translations_publications = {
           journal: "Mémoires du livre / Studies in Book Culture",
           date: "2025",
           description: "",
-          tags: ["Scientific publication", "Open science"],
+          tags: ["Peer-reviewed scientific publication", "Open science"],
           link: "https://www.erudit.org/fr/revues/memoires/2025-v16-n2-memoires010471/1122235ar/",
         },
         {

@@ -26,7 +26,7 @@ const conference_cities = [
     labelY: 18,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#558467",
+    color: "#486C2F",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/402130/Details"
   },
   {
@@ -35,7 +35,7 @@ const conference_cities = [
     labelY: 4,
     labelX: 12,
     anchor: "start" as const,
-    color: "#558467",
+    color: "#486C2F",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/392821/Details"
   },
 
@@ -45,7 +45,7 @@ const conference_cities = [
     labelY: 18,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#558467",
+    color: "#486C2F",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/398193/Details"
   },
   {
@@ -62,7 +62,7 @@ const conference_cities = [
     labelY: -12,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#558467",
+    color: "#486C2F",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/392826/Details"
   },
   {
@@ -74,32 +74,32 @@ const conference_cities = [
     color: "#F5DAA7",
     url: "https://recsys.acm.org/recsys25/summer-school/"
   },
-  { name: { en: "Aubervilliers", fr: "Aubervilliers" }, coordinates: [2.3833, 48.9167] as [number, number], labelY: 2.5, labelX: 50, anchor: "middle" as const, color: "#558467", url: "" },
+  { name: { en: "Aubervilliers", fr: "Aubervilliers" }, coordinates: [2.3833, 48.9167] as [number, number], labelY: 2.5, labelX: 50, anchor: "middle" as const, color: "#486C2F", url: "" },
   {
     name: { en: "Lille", fr: "Lille" },
     coordinates: [3.0573, 50.6292] as [number, number],
     labelY: 3,
     labelX: -33,
     anchor: "right" as const,
-    color: "#558467",
+    color: "#486C2F",
     url: ""
   },
   
 
-  { name: { en: "Brno", fr: "Brno" }, coordinates: [16.6068, 49.1951] as [number, number], labelY: -10, labelX: 0, anchor: "middle" as const, color: "#558467", url: "" },
+  { name: { en: "Brno", fr: "Brno" }, coordinates: [16.6068, 49.1951] as [number, number], labelY: -10, labelX: 0, anchor: "middle" as const, color: "#486C2F", url: "" },
 
 ]
 const legend = {
   en: [
     { color: "#EFEABB", label: "Home universities" },
     { color: "#9B0F06", label: "Research stays" },
-    { color: "#558467", label: "Conferences" },
+    { color: "#486C2F", label: "Conferences" },
     { color: "#F5DAA7", label: "Summer schools" },
   ],
   fr: [
     { color: "#EFEABB", label: "Universités de rattachement" },
     { color: "#9B0F06", label: "Séjours de recherche" },
-    { color: "#558467", label: "Conférences" },
+    { color: "#486C2F", label: "Conférences" },
     { color: "#F5DAA7", label: "Écoles d'été" },
   ],
 }
@@ -126,7 +126,7 @@ key={geo.rsmKey}
 geography={geo}
 style={{
                   default: { fill: "#E5E7EB", stroke: "#fff", strokeWidth: 0.5 },
-                  hover: { fill: "#cb564d", stroke: "#fff", strokeWidth: 0.5 },
+                  hover: { fill: "#8B2626", stroke: "#fff", strokeWidth: 0.5 },
                   pressed: { fill: "#81181e" },
                 }}
 />
@@ -135,7 +135,7 @@ style={{
 </Geographies>
 {cities.map(({ name, coordinates, labelY, labelX, anchor }) => (
 <Marker key={name.en} coordinates={coordinates}>
-<circle r={6} fill="#cb564d" stroke="#fff" strokeWidth={2} />
+<circle r={6} fill="#8B2626" stroke="#fff" strokeWidth={2} />
 <text
 textAnchor={anchor}
 x={labelX}

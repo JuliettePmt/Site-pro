@@ -18,7 +18,7 @@ interface ProjectCardProps {
     title: string;
     description: string;
     tags: readonly string[];
-    link: string;
+    link?: string;
     githublink?: string;
   };
   num: number;
@@ -66,6 +66,7 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
         </CardContent>
 
         <CardFooter className="pt-2 ">
+        {value.link && value.link !== "" && (
           <Link
             href={value.link}
             target="_blank"
@@ -81,6 +82,7 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
             {lang === 'fr' ? 'Voir le projet' : 'View project'}
             <ArrowUpRight className="h-4 w-4 ml-1 hidden group-hover:block -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
           </Link>
+          )}
 
           {value.githublink && value.githublink !== "" && (
             <Link

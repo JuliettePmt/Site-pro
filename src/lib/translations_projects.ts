@@ -60,9 +60,8 @@ export const translations_projects = {
         },
         {
           title: "Campus",
-          description: "Zotero academic citation style, available in two formats: in-text citation, or footnote citation.",
+          description: "Zotero academic citation style, available in French in two formats: in-text, or footnote.",
           tags: ["Development", "Zotero"],
-          link:"",
           githublink: "https://github.com/JuliettePmt/Campus-Zotero-style",
         },
       ],

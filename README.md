@@ -1,6 +1,6 @@
 # Professional website portfolio
 
-Professional website forked from ![this original project](https://github.com/taqui-786/Portfolio)
+Professional website forked from ![this original project](https://github.com/taqui-786/Portfolio) 
 
 ### Getting Started
 First, run the development server:

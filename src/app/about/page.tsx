@@ -31,6 +31,13 @@ const page = () => {
                 <span className="text-[hsl(var(--primary-sky))]">{t.disciplines[1]}</span>{" "}{t.bio[8]}{t.faculties[1]}
                 {t.profs[0]}{"."}
         </p>
+        <p className="font-poppins text-sm w-full text-tertiary max-sm:text-lg mt-5 leading-loose">
+                {t.studies[0]}
+                <span className="text-[hsl(var(--primary-sky))]">{t.studies[1]}</span> 
+                {t.studies[2]}
+                <span className="text-[hsl(var(--primary-sky))]">{t.studies[3]}</span>
+                {t.studies[4]}
+        </p>
 
         <Heading><p className="w-full mt-10">{t.intro_phd}</p></Heading>
         <p className="font-poppins text-sm w-full text-tertiary max-sm:text-lg mt-5 leading-loose">

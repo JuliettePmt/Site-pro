@@ -8,6 +8,7 @@ export const translations_about = {
     intro:["Qui suis-je ?", "Je suis"],
     bio: ["doctorante", "en co-tutelle entre le", "département de", "de l'", " &","la", "faculté  d'", "Informatique", "de l'"],
     faculties: ["Université libre de Bruxelles", "Université de Namur"],
+    studies:["J'ai étudié à ", "Sciences Po Lille", ", avant de réaliser un double-master à ", "Centrale Lille."],
     profs: [", sous la direction de Louis Wiart et Bruno Dumas"],
     intro_phd:"Ma thèse",
     phd_subject:["Ma thèse vise à analyser la façon dont, sur Internet les", "activités littéraires", "sont", "traduites en statistiques, notes, graphiques ou métriques quantifiées", "et à saisir les", "effets de cette « mise en nombre »", "sur le rapport que les lecteurs entretiennent aux livres et aux pratiques de lecture."],
@@ -21,6 +22,7 @@ export const translations_about = {
     intro: ["Who am I?", "I am"],
     bio: ["a PhD candidate", "in a joint supervision between the", "department of", "of the", " &", "the", "faculty of ", "Computer Science", "of the"],
     faculties: [" Université libre de Bruxelles", " University of Namur"],
+    studies:["I graduated from Sciences Po Lille and Centrale Lille."],
     profs: [", supervized by Prof. Louis Wiart and Prof. Bruno Dumas"],
     intro_phd:"My PhD thesis",
     phd_subject: [

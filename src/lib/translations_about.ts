@@ -8,7 +8,7 @@ export const translations_about = {
     intro:["Qui suis-je ?", "Je suis"],
     bio: ["doctorante", "en co-tutelle entre le", "département de", "de l'", " &","la", "faculté  d'", "Informatique", "de l'"],
     faculties: ["Université libre de Bruxelles", "Université de Namur"],
-    studies:["J'ai étudié à ", "Sciences Po Lille", ", avant de réaliser un double master avec ", "Centrale Lille"],
+    studies:["J'ai étudié à ", "Sciences Po Lille", ", avant d'effectuer un double master avec ", "Centrale Lille"],
     profs: [", sous la direction de Louis Wiart et Bruno Dumas"],
     intro_phd:"Ma thèse",
     phd_subject:["Ma thèse vise à analyser la façon dont, sur Internet les", "activités littéraires", "sont", "traduites en statistiques, notes, graphiques ou métriques quantifiées", "et à saisir les", "effets de cette « mise en nombre »", "sur le rapport que les lecteurs entretiennent aux livres et aux pratiques de lecture."],

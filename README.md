@@ -1,6 +1,6 @@
 # Professional website portfolio
 
-Professional website forked from ![this original project](https://github.com/taqui-786/Portfolio) 
+Professional website forked from ![this original project](https://github.com/taqui-786/Portfolio)
 
 ### Getting Started
 First, run the development server:
@@ -9,9 +9,6 @@ First, run the development server:
 npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
----
-NB: 'git push' need to occur in /site-pro subfile.
 
 ### TBD :
 

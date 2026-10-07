@@ -23,21 +23,15 @@ const page = () => {
         </Badge>
         <Heading>{t.intro[0]}</Heading>
         <FramerWrapper y={0} x={100}>
-        {/* <p className="font-poppins text-sm w-full text-tertiary max-sm:text-lg">
+        <p className="font-poppins text-sm w-full text-tertiary max-sm:text-lg mt-5 leading-loose">
                 {t.intro[1]} {t.bio[0]} {t.bio[1]} {t.bio[2]}{" "}
-                <span className="text-xl">{t.disciplines[0]}</span> {t.bio[3]}{" "}
-                <span className="text-xl text-[hsl(var(--primary-sky))]">{t.faculties[0]}</span>{" "}
-                {t.bio[4]} {t.bio[5]} {t.bio[6]}{" "}
-                <span className="text-xl">{t.disciplines[1]}</span> {t.bio[8]}{" "}
-                <span className="text-xl text-[hsl(var(--primary-sky))]">{t.faculties[1]}</span>.
-                </p> */}
-        <p className="font-poppins text-sm w-full text-tertiary max-sm:text-lg leading-loose">
-        <strong> {t.disciplines[0]}</strong> {t.bio[3]}
-        <strong><span className="text-sm text-[hsl(var(--primary-sky))]">{t.faculties[0]}</span></strong>{" "}
-        {" "} {t.bio[4]}{" "} {t.bio[5]}
-        {" "} {t.bio[6]}<strong>{t.disciplines[1]}</strong> {t.bio[8]}
-        <strong><span className="text-sm text-[hsl(var(--primary-sky))]">{t.faculties[1]}</span></strong>. Je suis sous la co-direction de Bruno Dumas (Unamur) et de Louis Wiart (ULB).
-        </p> 
+                 
+                <span className="text-[hsl(var(--primary-sky))]">{t.disciplines[0]}</span>{" "}{t.bio[3]}{t.faculties[0]}
+                {t.bio[4]} {t.bio[5]} {t.bio[6]}
+                <span className="text-[hsl(var(--primary-sky))]">{t.disciplines[1]}</span>{" "}{t.bio[8]}{t.faculties[1]}
+                {t.profs[0]}{"."}
+        </p>
+
         <Heading><p className="w-full mt-10">{t.intro_phd}</p></Heading>
         <p className="font-poppins text-sm w-full text-tertiary max-sm:text-lg mt-5 leading-loose">
         {t.phd_subject[0]} <span className="text-sm text-[hsl(var(--primary-sky))]">{t.phd_subject[1]}</span> {t.phd_subject[2]} <span className="text-sm text-[hsl(var(--primary-sky))]">{t.phd_subject[3]}</span> {t.phd_subject[4]} <span className="text-sm text-[hsl(var(--primary-sky))]">{t.phd_subject[5]}</span> {t.phd_subject[6]}

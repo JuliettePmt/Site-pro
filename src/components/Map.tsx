@@ -7,7 +7,7 @@ const cities = [
     coordinates: [4.3517, 50.8503] as [number, number],
     labelY: -12,
     labelX: 0,
-    color:"#F5824A",
+    color:"#EFEABB",
     anchor: "middle" as const
   },
   {
@@ -15,7 +15,7 @@ const cities = [
     coordinates: [4.8717, 50.4669] as [number, number],
     labelY: 4,
     labelX: 12,
-    color:"#F5824A",
+    color:"#EFEABB",
     anchor: "start" as const
   },
 ]
@@ -26,7 +26,7 @@ const conference_cities = [
     labelY: 18,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#7D9C65",
+    color: "#558467",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/402130/Details"
   },
   {
@@ -35,7 +35,7 @@ const conference_cities = [
     labelY: 4,
     labelX: 12,
     anchor: "start" as const,
-    color: "#7D9C65",
+    color: "#558467",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/392821/Details"
   },
 
@@ -45,7 +45,7 @@ const conference_cities = [
     labelY: 18,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#7D9C65",
+    color: "#558467",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/398193/Details"
   },
   {
@@ -54,8 +54,7 @@ const conference_cities = [
     labelY: -12,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#A03A13",
-    url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/402391/Details"
+    color: "#9B0F06",
   },
   {
     name: { en: "Tirana", fr: "Tirana" },
@@ -63,7 +62,7 @@ const conference_cities = [
     labelY: -12,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#7D9C65",
+    color: "#558467",
     url: "https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/392826/Details"
   },
   {
@@ -72,36 +71,36 @@ const conference_cities = [
     labelY: 18,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#FFAA00",
+    color: "#F5DAA7",
     url: "https://recsys.acm.org/recsys25/summer-school/"
   },
-  { name: { en: "Aubervilliers", fr: "Aubervilliers" }, coordinates: [2.3833, 48.9167] as [number, number], labelY: 2.5, labelX: 50, anchor: "middle" as const, color: "#7D9C65", url: "" },
+  { name: { en: "Aubervilliers", fr: "Aubervilliers" }, coordinates: [2.3833, 48.9167] as [number, number], labelY: 2.5, labelX: 50, anchor: "middle" as const, color: "#558467", url: "" },
   {
     name: { en: "Lille", fr: "Lille" },
     coordinates: [3.0573, 50.6292] as [number, number],
     labelY: 3,
     labelX: -33,
     anchor: "right" as const,
-    color: "#7D9C65",
+    color: "#558467",
     url: ""
   },
   
 
-  { name: { en: "Brno", fr: "Brno" }, coordinates: [16.6068, 49.1951] as [number, number], labelY: -10, labelX: 0, anchor: "middle" as const, color: "#7D9C65", url: "" },
+  { name: { en: "Brno", fr: "Brno" }, coordinates: [16.6068, 49.1951] as [number, number], labelY: -10, labelX: 0, anchor: "middle" as const, color: "#558467", url: "" },
 
 ]
 const legend = {
   en: [
-    { color: "#F5824A", label: "Home universities" },
-    { color: "#A03A13", label: "Research stays" },
-    { color: "#7D9C65", label: "Conferences" },
-    { color: "#FFAA00", label: "Summer schools" },
+    { color: "#EFEABB", label: "Home universities" },
+    { color: "#9B0F06", label: "Research stays" },
+    { color: "#558467", label: "Conferences" },
+    { color: "#F5DAA7", label: "Summer schools" },
   ],
   fr: [
-    { color: "#F5824A", label: "Universités de rattachement" },
-    { color: "#A03A13", label: "Séjours de recherche" },
-    { color: "#7D9C65", label: "Conférences" },
-    { color: "#FFAA00", label: "Écoles d'été" },
+    { color: "#EFEABB", label: "Universités de rattachement" },
+    { color: "#9B0F06", label: "Séjours de recherche" },
+    { color: "#558467", label: "Conférences" },
+    { color: "#F5DAA7", label: "Écoles d'été" },
   ],
 }
 export default function MapChart() {

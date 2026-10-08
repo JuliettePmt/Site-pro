@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Rubik} from "next/font/google";
+import { Karla, Rubik} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
@@ -7,10 +7,10 @@ import { portfolioConfig } from "@/config/portfolio.config";
 import { LangProvider } from '@/context/LangContext'
 import LangToggle from "@/components/LangToggle";
 
-const montserrat = Montserrat({
+const karla = Karla({
   subsets: ["latin"],
   weight: "600",
-  variable: "--font-montserrat",
+  variable: "--font-karla",
 });
 const rubik = Rubik({
   subsets: ["latin"],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 return (
 <html lang="en">
-<body className={`${montserrat.variable} ${rubik.variable}`}>
+<body className={`${karla.variable} ${rubik.variable}`}>
 <LangProvider>
 <main
 className={cn(

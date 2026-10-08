@@ -7,6 +7,7 @@ const cities = [
     coordinates: [4.3517, 50.8503] as [number, number],
     labelY: -12,
     labelX: 0,
+    color: "#FF6D28",
     anchor: "middle" as const
   },
   {
@@ -14,6 +15,7 @@ const cities = [
     coordinates: [4.8717, 50.4669] as [number, number],
     labelY: 4,
     labelX: 12,
+    color: "#FF6D28",
     anchor: "start" as const
   },
 ]
@@ -52,7 +54,7 @@ const conference_cities = [
     labelY: -12,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#FF6D28",
+    color: "#FFB900",
     url: ""
   },
   {

@@ -23,7 +23,7 @@ const page = () => {
         </Badge>
         <Heading>{t.intro[0]}</Heading>
         <FramerWrapper y={0} x={100}>
-        <p className="font-lato text-lg w-full text-tertiary max-sm:text-lg mt-5 leading-loose">
+        <p className="font-lato text-sm w-full text-tertiary max-sm:text-sm mt-5 leading-loose">
                 {t.intro[1]} {t.bio[0]} {t.bio[1]} {t.bio[2]}{" "}
                  
                 <span className="text-[hsl(var(--primary-sky))]">{t.disciplines[0]}</span>{" "}{t.bio[3]}{t.faculties[0]}
@@ -31,7 +31,7 @@ const page = () => {
                 <span className="text-[hsl(var(--primary-sky))]">{t.disciplines[1]}</span>{" "}{t.bio[8]}{t.faculties[1]}
                 {t.profs[0]}{"."}
         </p>
-        <p className="font-lato text-lg w-full max-sm:text-lg mt-5 leading-loose">
+        <p className="font-lato text-sm w-full max-sm:text-sm mt-5 leading-loose">
                 {t.studies[0]}
                 <span className="text-[hsl(var(--primary-sky))]">{t.studies[1]}</span> 
                 {t.studies[2]}
@@ -40,7 +40,7 @@ const page = () => {
         </p>
 
         <Heading><p className="w-full mt-10">{t.intro_phd}</p></Heading>
-        <p className="font-lato text-lg w-full text-tertiary max-sm:text-lg mt-5 leading-loose">
+        <p className="font-lato text-sm w-full text-tertiary max-sm:text-sm mt-5 leading-loose">
         {t.phd_subject[0]} <span className="text-[hsl(var(--primary-sky))]">{t.phd_subject[1]}</span> {t.phd_subject[2]} <span className="text-[hsl(var(--primary-sky))]">{t.phd_subject[3]}</span> {t.phd_subject[4]} <span className="text-[hsl(var(--primary-sky))]">{t.phd_subject[5]}</span> {t.phd_subject[6]}
         </p>
         </FramerWrapper>

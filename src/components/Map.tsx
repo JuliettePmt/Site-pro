@@ -140,7 +140,7 @@ textAnchor={anchor}
 x={labelX}
 y={labelY}
 style={{
-                fontFamily: "Poppins, sans-serif",
+                fontFamily: "Montserrat, sans-serif",
                 fontSize: 12,
                 fill: "#1E293B",
                 fontWeight: 600,
@@ -160,7 +160,7 @@ style={{
         x={labelX}
         y={labelY}
         style={{
-          fontFamily: "Poppins, sans-serif",
+          fontFamily: "Montserrat, sans-serif",
           fontSize: 12,
           fill: "#1E293B",
           fontWeight: 600,
@@ -178,7 +178,7 @@ style={{
         x={labelX}
         y={labelY}
         style={{
-          fontFamily: "Poppins, sans-serif",
+          fontFamily: "Montserrat, sans-serif",
           fontSize: 12,
           fill: "#1E293B",
           fontWeight: 600,
@@ -201,7 +201,7 @@ style={{
           border: "1px solid #E5E7EB",
           borderRadius: "8px",
           padding: "10px 14px",
-          fontFamily: "Poppins, sans-serif",
+          fontFamily: "Montserrat, sans-serif",
           fontSize: "clamp(9px, 1.5vw, 13px)",
           color: "#1E293B",
           boxShadow: "0 1px 4px rgba(0,0,0,0.1)",

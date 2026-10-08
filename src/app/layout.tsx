@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Rubik } from "next/font/google";
+import { Montserrat, Rubik} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
@@ -7,16 +7,17 @@ import { portfolioConfig } from "@/config/portfolio.config";
 import { LangProvider } from '@/context/LangContext'
 import LangToggle from "@/components/LangToggle";
 
-const poppins = Poppins({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-poppins",
+  weight: "600",
+  variable: "--font-montserrat",
 });
 const rubik = Rubik({
   subsets: ["latin"],
   weight: "600",
   variable: "--font-rubik",
 });
+
 export const metadata: Metadata = {
   metadataBase: new URL(portfolioConfig.seo.url),
   title: {
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 return (
 <html lang="en">
-<body className={`${poppins.variable} ${rubik.variable}`}>
+<body className={`${montserrat.variable} ${rubik.variable}`}>
 <LangProvider>
 <main
 className={cn(

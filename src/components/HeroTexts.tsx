@@ -17,7 +17,7 @@ return (
 {firstName} {middleName}  {lastName}
 </h1>
 <TextRotator />
-<h3 className="font-poppins text-2sm max-sm:text-sm">{t.tagline}</h3>
+<h3 className="font-montserrat text-3sm max-sm:text-sm">{t.tagline}</h3>
 </>
   );
 };

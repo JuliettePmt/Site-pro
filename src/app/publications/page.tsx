@@ -21,7 +21,7 @@ return (
 <div className="flex flex-col gap-3">
 <Heading>{t.title}</Heading>
 <FramerWrapper y={0} x={200}>
-<p className=" font-poppins text-lg w-full text-tertiary max-sm:text-base">
+<p className=" font-montserrat text-lg w-full text-tertiary max-sm:text-base">
           {t.subtitle}
 </p>
 </FramerWrapper>

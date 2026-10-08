@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        poppins: ['var(--font-poppins)'],
+        montserrat: ['var(--font-montserrat)'],
         rubik: ['var(--font-rubik)']
       },
       colors: {

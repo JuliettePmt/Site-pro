@@ -9,8 +9,8 @@ const { lang } = useLang();
 const t = translations_about[lang];
 return (
 <div className="py-4  rounded-md flex flex-col justify-center items-left overflow-hidden">
-<div className="font-poppins text-base sm:text-2xl [text-wrap:balance] text-gray-700">
-<div className="font-poppins text-base sm:text-2xl [text-wrap:balance] text-gray-700">
+<div className="font-montserrat text-base sm:text-2xl [text-wrap:balance] text-gray-700">
+<div className="font-montserrat text-base sm:text-2xl [text-wrap:balance] text-gray-700">
 {t.occupation}{" "}
 <span className="text-sm"> {t.connector}</span>{" "}
 <span className="text-primary">{t.disciplines[0]}</span>

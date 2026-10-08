@@ -35,15 +35,15 @@ const affiliationsPage = () => {
                 <div className="text-m italic text-primary max-sm:text-sm ">
                 {affiliation.subtitle}
               </div>
-              <p className="font-karla text-base w-full text-muted-foreground max-sm:text-xs mt-2">
+              <p className="font-lato text-base w-full text-muted-foreground max-sm:text-xs mt-2">
                 {affiliation.description}
               </p>
-              <p className="font-karla text-xs w-full text-muted-foreground max-sm:text-xs mt-2">
+              <p className="font-lato text-xs w-full text-muted-foreground max-sm:text-xs mt-2">
                 {affiliation.period}
               </p>
-              <p className="font-karla text-xs w-full text-muted-foreground max-sm:text-xs -mt-">
+              <p className="font-lato text-xs w-full text-muted-foreground max-sm:text-xs -mt-">
               {affiliation.url && (
-                <a href={affiliation.url} target="_blank" rel="noopener noreferrer" className="font-karla text-xs text-muted-foreground mt-2 inline-flex items-center gap-1 hover:text-[hsl(var(--primary-sky))] transition-colors">
+                <a href={affiliation.url} target="_blank" rel="noopener noreferrer" className="font-lato text-xs text-muted-foreground mt-2 inline-flex items-center gap-1 hover:text-[hsl(var(--primary-sky))] transition-colors">
                     {affiliation.url_title}
                     <ExternalLink className="h-3 w-3" />
                 </a>

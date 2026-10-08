@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Karla, Rubik} from "next/font/google";
+import { Karla, Rubik, Lato} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
@@ -10,12 +10,17 @@ import LangToggle from "@/components/LangToggle";
 const karla = Karla({
   subsets: ["latin"],
   weight: "600",
-  variable: "--font-karla",
+  variable: "--font-lato",
 });
 const rubik = Rubik({
   subsets: ["latin"],
   weight: "600",
   variable: "--font-rubik",
+});
+const lato = Lato({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +48,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 return (
 <html lang="en">
-<body className={`${karla.variable} ${rubik.variable}`}>
+<body className={`${karla.variable} ${rubik.variable} ${lato.variable}`}>
 <LangProvider>
 <main
 className={cn(

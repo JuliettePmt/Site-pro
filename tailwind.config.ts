@@ -24,8 +24,9 @@ module.exports = {
     },
     extend: {
       fontFamily:{
-        karla: ['var(--font-karla)'],
-        rubik: ['var(--font-rubik)']
+        karla: ['var(--font-lato)'],
+        rubik: ['var(--font-rubik)'],
+        lato: ['var(--font-lato)']
       },
       colors: {
         border: "hsl(var(--border))",

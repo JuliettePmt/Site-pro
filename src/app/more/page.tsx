@@ -41,7 +41,7 @@ const morePage = () => {
                   <CardTitle>{value.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base font-karla ">{value.description}</p>
+                  <p className="text-base font-lato ">{value.description}</p>
                 </CardContent>
                 <CardFooter>
                   <Link

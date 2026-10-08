@@ -42,10 +42,10 @@ const PublicationCards: React.FC<PublicationCardProps> = ({ value, num }) => {
         <CardHeader className="pb-2">
           <CardTitle className="text-xl font-bold text-primary">{value.title}</CardTitle>
         </CardHeader>
-        <CardMetadata className="text-sm text-tertiary">
+        <CardMetadata className="text-sm text-tertiary font-lato">
           {value.author},{" "}<span className="italic">{value.journal}</span>,  {value.date}{"."}
         </CardMetadata>
-        <CardContent className="flex-grow flex flex-col gap-4">
+        <CardContent className="flex-grow flex flex-col gap-4 font-lato">
         <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{value.description}</p>          
           <div className="flex flex-wrap gap-2">
             {value.tags.map((tag: string, index: number) => {
@@ -87,11 +87,11 @@ const PublicationCards: React.FC<PublicationCardProps> = ({ value, num }) => {
                 variant: "default", 
                 size: "sm" 
               }),
-              "w-fit transition-all hover:translate-y-[-2px] hover:shadow-md group"
+              "w-fit transition-all hover:translate-y-[-2px] hover:shadow-md group font-lato"
             )}
           >
             {lang === 'fr' ? "Lire l'article" : 'Read the article'}
-            <ArrowUpRight className="h-4 w-4 ml-1 hidden group-hover:block -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+            <ArrowUpRight className=" h-4 w-4 ml-1 hidden group-hover:block -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
           </Link>
 
         </CardFooter>

@@ -39,9 +39,9 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
           <CardTitle className="text-xl font-bold text-primary">{value.title}</CardTitle>
         </CardHeader>
         
-        <CardContent className="flex-grow flex flex-col gap-4">
-        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">{value.description}</p>          
-          <div className="flex flex-wrap gap-2">
+        <CardContent className="flex-grow flex flex-col gap-4 font-lato">
+        <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line ">{value.description}</p>          
+          <div className="flex flex-wrap gap-2 font-lato">
             {value.tags.map((tag: string, index: number) => {
               const tagStyles = {
                 'Development': 'bg-red-100 text-red-800',
@@ -65,7 +65,7 @@ const ProjectCards: React.FC<ProjectCardProps> = ({ value, num }) => {
           </div>
         </CardContent>
 
-        <CardFooter className="pt-2 ">
+        <CardFooter className="pt-2 font-lato">
         {value.link && value.link !== "" && (
           <Link
             href={value.link}

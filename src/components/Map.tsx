@@ -54,7 +54,7 @@ const conference_cities = [
     labelY: -12,
     labelX: 0,
     anchor: "middle" as const,
-    color: "#FFB900",
+    color: "#FF6D28",
     url: ""
   },
   {

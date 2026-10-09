@@ -7,7 +7,7 @@ const cities = [
     coordinates: [4.3517, 50.8503] as [number, number],
     labelY: -12,
     labelX: 0,
-    color: "#FF6D28",
+    color: "#81181D",
     anchor: "middle" as const
   },
   {
@@ -15,7 +15,7 @@ const cities = [
     coordinates: [4.8717, 50.4669] as [number, number],
     labelY: 4,
     labelX: 12,
-    color: "#FF6D28",
+    color: "#81181D",
     anchor: "start" as const
   },
 ]
@@ -92,14 +92,14 @@ const conference_cities = [
 ]
 const legend = {
   en: [
-    { color: "#FF6D28", label: "Home universities" },
-    { color: "#FFB900", label: "Research stays" },
+    { color: "#81181D", label: "Home universities" },
+    { color: "#FF6D28", label: "Research stays" },
     { color: "#839705", label: "Conferences" },
     { color: "#F1E5A1", label: "Summer schools" },
   ],
   fr: [
-    { color: "#FF6D28", label: "Universités de rattachement" },
-    { color: "#FFB900", label: "Séjours de recherche" },
+    { color: "#81181D", label: "Universités de rattachement" },
+    { color: "#FF6D28", label: "Séjours de recherche" },
     { color: "#839705", label: "Conférences" },
     { color: "#F1E5A1", label: "Écoles d'été" },
   ],

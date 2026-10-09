@@ -91,7 +91,6 @@ const conference_cities = [
 
 ]
 
-}
 
 const legend = {
   en: [

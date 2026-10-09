@@ -90,16 +90,19 @@ const conference_cities = [
   { name: { en: "Brno", fr: "Brno" }, coordinates: [16.6068, 49.1951] as [number, number], labelY: -10, labelX: 0, anchor: "middle" as const, color: "#839705", url: "https://c-in.floq.live/event/ecc26/dailyprogramme?objectClass=timeslot&objectId=6a1d8b4051c630f8c56473d6&type=detail" },
 
 ]
+
+}
+
 const legend = {
   en: [
     { color: "#8B2626", label: "Home universities" },
-    { color: "#FF6D28", label: "Research stays" },
+    { color: "#FFB900", label: "Research stays" },
     { color: "#839705", label: "Conferences" },
     { color: "#F1E5A1", label: "Summer schools" },
   ],
   fr: [
     { color: "#8B2626", label: "Universités de rattachement" },
-    { color: "#FF6D28", label: "Séjours de recherche" },
+    { color: "#FFB900", label: "Séjours de recherche" },
     { color: "#839705", label: "Conférences" },
     { color: "#F1E5A1", label: "Écoles d'été" },
   ],

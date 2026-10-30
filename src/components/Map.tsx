@@ -55,7 +55,7 @@ const conference_cities = [
     labelX: 0,
     anchor: "middle" as const,
     color: "#FF6D28",
-    url: ""
+    url: "https://labcmo.ca/2026/10/30/conference-debat-likes-graphiques-et-statistiques-penser-linfluence-de-la-quantification-sur-les-pratiques-des-utilisateur%c2%b7ices-de-plateformes-litteraires-avec-juliette-parmentier-2/"
   },
   {
     name: { en: "Tirana", fr: "Tirana" },
